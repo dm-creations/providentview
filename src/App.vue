@@ -1,40 +1,19 @@
 <template>
   <v-app>
-
     <v-app-bar app color="primary" dark>
       <v-toolbar-title>Provident View LTD</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn text rounded>Home</v-btn>
-      <v-btn text rounded>Login</v-btn>
+      <v-btn
+        v-for="link in links"
+        :key="`${link.label}-header-link`"
+        text 
+        rounded 
+        :to="link.url">
+        {{ link.label }}
+      </v-btn>
     </v-app-bar>
     <v-content>
-      <!-- login Module -->
-      <v-card width="400" class="mx-auto mt-5">
-        <v-card-title>
-
-        </v-card-title>
-        <v-card-text>
-          <v-form>
-            <v-text-field 
-              label="Username"
-              prepend-icon="mdi-account-circle"
-              />
-            <v-text-field 
-              :type="showPassword ? 'text' : 'password'"
-              label="Password"
-              prepend-icon="mdi-lock"
-              :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-              @click:append="showPassword = !showPassword"
-            />
-          </v-form>
-        </v-card-text>
-        <v-divider />
-        <v-card-actions>
-          <v-btn color="success">Register</v-btn>
-          <v-spacer></v-spacer>
-          <v-btn color="info">Login</v-btn>
-        </v-card-actions>
-      </v-card>
+      <router-view></router-view>
     </v-content>
     <v-footer
       color="primary lighten-1"
@@ -46,13 +25,14 @@
       >
         <v-btn
           v-for="link in links"
-          :key="link"
+          :key="`${link.label}-footer-link`"
           color="white"
           text
           rounded
           class="my-2"
+          :to="link.url"
         >
-          {{ link }}
+          {{ link.label }}
         </v-btn>
         <v-col
           class="primary lighten-2 py-4 text-center white--text"
@@ -70,20 +50,45 @@
 
 export default {
   name: 'App',
-
   components: {
   },
-
-  data: () => ({
-    showPassword: false,
-    links: [
-        'Home',
-        'About Us',
-        'Team',
-        'Services',
-        'Blog',
-        'Contact Us',
+  data () {
+    return {
+      links: [
+        {
+          label: 'Home',
+          url: '/'
+        },
+        {
+          label: 'Login',
+          url: '/login'
+        },
+        {
+          label: 'About Us',
+          url: '/about-us'
+        },
+        {
+          label: 'Dashboard',
+          url: '/dashboard'
+        },
+        {
+          label: 'Team',
+          url: '/team'
+        },
+        {
+          label: 'Services',
+          url: '/services'
+        },
+        {
+          label: 'Blog',
+          url: '/blog'
+        },
+        {
+          label: 'Contact Us',
+          url: '/contact-us'
+        }
       ],
-  }),
-};
+    }
+  }
+}
 </script>
