@@ -68,6 +68,10 @@ export default {
           url: '/about-us'
         },
         {
+          label: 'Sign Up',
+          url: '/signup'
+        },
+        {
           label: 'Dashboard',
           url: '/dashboard'
         },
