@@ -25,9 +25,9 @@ Vue.use(VueRouter)
     component: () => import('../views/Login.vue')
   },
   {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: () => import('../views/Dashboard.vue')
+    path: '/double-dashboard',
+    name: 'Double Dashboard',
+    component: () => import('../views/DoubleDashboard.vue')
   },
   {
     path: '/signup',
