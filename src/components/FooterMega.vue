@@ -15,34 +15,76 @@
               cols="12"
               md="4"
             >
-                <div class="text-uppercase title font-weight-bold mb-1 text-left white--text">
-                    <h2>Provident View LTD</h2>
-                    <p>Company Number 10440118</p>
-                </div>
+                <v-subheader class="title">
+                    SERVICES
+                </v-subheader>
+                <v-list-item
+                      v-for="service in services"
+                      :key="service">
+                    <v-list-item-content>
+                        <v-list-item-title>&rsaquo; {{ service }}</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-col>
 
             <v-col
               cols="12"
               md="4"
             >
-              <h2 class="text-uppercase title font-weight-bold mb-1 text-left white--text">FAQs</h2>
-
-              <base-business-contact dense />
+                <v-subheader class="title">
+                    INFORMATION
+                </v-subheader>
+                <v-list-item
+                      v-for="info in information"
+                      :key="info">
+                    <v-list-item-content>
+                        <v-list-item-title>&rsaquo; {{ info }}</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-col>
+            <v-col
+              cols="12"
+              md="4"
+            >
+                <v-subheader class="title">
+                    CONTACT
+                </v-subheader>
+                <v-list-item href="https://api.whatsapp.com/send?phone=07816359993?text=Hi%20I'd%20like%20to%20make%20an%20enquiry%20about%20your%20services" target="_blank">
+                    <v-list-item-content>
+                        <v-list-item-title>&rsaquo; WhatsApp</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                    <v-list-item-content>
+                        <v-list-item-title >&rsaquo; Facebook Messenger</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                    <v-list-item-content>
+                        <v-list-item-title >&rsaquo; Email</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-col>
 
             <v-col
+              class="d-none"
               cols="12"
               md="4"
             >
               <h2 class="text-uppercase title font-weight-bold mb-1 text-left white--text">Contact Us</h2>
               <info-features></info-features>
             </v-col>
+          </v-row>
+          
 
+          <v-row>
             <v-col
               cols="12"
               md="12"
+              class="text-center"
             >
-              <instagram />
+                <p class="white--text"><strong>Provident View LTD</strong> is registered as a limited company in England and Wales under company number 10440118</p>
+                <p>providentview.co.uk &copy; {{ new Date().getFullYear() }} </p>
             </v-col>
           </v-row>
         </v-container>
@@ -57,12 +99,11 @@
 
     components: {
       InfoFeatures: () => import('@/components/InfoFeatures'),
-      Instagram: () => import('@/components/Instagram'),
     },
     props: {
       space: {
         type: [Number, String],
-        default: 96,
+        default: 32,
       },
     },
     computed: {
@@ -73,7 +114,7 @@
 
             return {
                 //   ...this.measurableStyles,
-                padding: `${space}px 0`,
+                padding: `${space}px 0 0 0`,
             }
         },
     },
@@ -96,6 +137,26 @@
                     text: 'john@vuetifyjs.com<br>heather@vuetifyjs.com',
                 },
             ],
+            services: [
+                'Guaranteed Rent',
+                'Assisted Property Search',
+                'Providing Tenants',
+                'Property Management',
+                'Property Maintenance',
+                'Tenancy Agreements',
+                'Videocall Viewings',
+                'Inventory',
+                'Marketing',
+                'Landlords',
+                'Tenant Buyers'
+            ],
+            information: [
+                'How to Buy from abroad', 
+                'What type of Mortgage should I get?', 
+                'What are the rules for buying in the UK', 
+                'How much work goes into Buy to Let', 
+                'Tenants leave a review'
+            ]
         }
     },
 

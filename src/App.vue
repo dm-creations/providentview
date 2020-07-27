@@ -16,17 +16,19 @@
     <v-main>
       <router-view></router-view>
     </v-main>
-    
+    <fb-messenger></fb-messenger>
     <homefooter></homefooter>
   </v-app>
 </template>
 
 <script>
 import SectionBusinessInfo from './components/FooterMega.vue'
+import FBM from './components/FacebookMessenger.vue'
 export default {
   name: 'App',
   components: {
-    'homefooter': SectionBusinessInfo 
+    'homefooter': SectionBusinessInfo ,
+    'fb-messenger': FBM
   },
   data () {
     return {
