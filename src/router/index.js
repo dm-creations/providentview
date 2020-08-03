@@ -19,9 +19,19 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
+    path: '/information',
+    name: 'Information and FAQs',
+    // anonymous function only imports the login component when the user hits the route
+    component: () => import('../views/Information.vue')
+  },
+  {
+    path: '/services',
+    name: 'Services',
+    component: () => import('../views/Services.vue')
+  },
+  {
     path: '/login',
     name: 'login',
-    // anonymous function only imports the login component when the user hits the route
     component: () => import('../views/Login.vue')
   },
   {

@@ -72,7 +72,6 @@
               md="4"
             >
               <h2 class="text-uppercase title font-weight-bold mb-1 text-left white--text">Contact Us</h2>
-              <info-features></info-features>
             </v-col>
           </v-row>
           
@@ -98,7 +97,6 @@
     name: 'SectionBusinessInfo',
 
     components: {
-      InfoFeatures: () => import('@/components/InfoFeatures'),
     },
     props: {
       space: {

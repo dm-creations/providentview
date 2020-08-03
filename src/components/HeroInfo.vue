@@ -14,21 +14,9 @@
           max-width="700"
           width="100%"
         >
+
           <h1 class="text-sm-h2 text-md-h1 pb-4 pview">{{ title }}</h1>
 
-          <h2 class="font-weight-light">
-            The property management company with a view to your peace of mind.
-          </h2>
-
-          <div
-            :class="$vuetify.breakpoint.smAndDown ? 'flex-column align-start' : 'align-center'"
-            class="d-flex flex-wrap mt-4"
-          >
-            <v-btn color="indigo">
-              Get in Touch
-            </v-btn>
-
-          </div>
         </v-responsive>
       </v-container>
     </v-img>
@@ -37,11 +25,11 @@
 
 <script>
     export default {
-        name: 'Hero',
+        name: 'Hero ',
 
         data() {
             return {
-                title: 'PROVIDENT VIEW'
+                title: 'INFORMATION & FAQS'
             }
         },
         provide: {
