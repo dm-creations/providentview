@@ -1,0 +1,172 @@
+{
+    "story":
+        {
+            "name":"Management",
+            "created_at":"2020-08-03T14:54:39.482Z",
+            "published_at":"2020-08-03T15:17:06.774Z",
+            "alternates":[],
+            "id":17064314,
+            "uuid":"92e718e2-5e3a-42b7-9fe9-ea7ae53d042e",
+            "content": {
+                    "_uid":"6caca1dc-fdf7-4d44-aed8-e32f22b74224",
+                    "image":"",
+                    "intro":"We have an established network of professionals to handle each type of management scenario as they arise, to guarantee you a smooth property management journey.",
+                    "title":"Property Management",
+                    "author":"fba7d4a9-dc1b-4cb6-87d4-44432269d124",
+                    "component":"Post",
+                    "long_text":
+                        {
+                            "type":"doc",
+                            "content":[
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"Our Property Management service lifecycle involves three main components: ",
+                                            "type":"text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"ordered_list",
+                                    "attrs":{"order":1},
+                                    "content":[
+                                        {
+                                            "type":"list_item",
+                                            "content":[
+                                                {
+                                                    "type":"paragraph",
+                                                    "content":[
+                                                        {
+                                                            "text":"Setup of the property",
+                                                            "type":"text"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type":"list_item",
+                                            "content":[
+                                                {
+                                                    "type":"paragraph",
+                                                    "content":[
+                                                        {
+                                                            "text":"Filling the property with tenants",
+                                                            "type":"text"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type":"list_item",
+                                            "content":[
+                                                {
+                                                    "type":"paragraph",
+                                                    "content":[
+                                                        {
+                                                            "text":"Financial management",
+                                                            "type":"text"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"The steps outlined are Provident View's method of management based on our experiences, however these methods are always prone to change and adaptation. ",
+                                            "type":"text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"Setup of Property",
+                                            "type":"text",
+                                            "marks":[{"type":"underline"}]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"Setting up the property can be broken down into the initial administration of the property, contract signing, key handover, room function, taking photos, inventory.",
+                                            "type":"text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"Filling the property with tenants",
+                                            "type":"text",
+                                            "marks":[{"type":"underline"}]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"Once the administrative side is completed, filling the house with tenants is the top priority. Only the best tenants who will take good care of the property should suffice.",
+                                            "type":"text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"Financial Management",
+                                            "type":"text",
+                                            "marks":[{"type":"underline"}]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"A certain approach needs to be taken to make sure the property practically runs itself. ",
+                                            "type":"text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"paragraph",
+                                    "content":[
+                                        {
+                                            "text":"For more information contact us on Facebook messenger or WhatsApp.",
+                                            "type":"text"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+            },
+            "slug":"management",
+            "full_slug":"services/management",
+            "default_full_slug":null,
+            "sort_by_date":null,
+            "position":0,
+            "tag_list":[],
+            "is_startpage":false,
+            "parent_id":17004595,
+            "meta_data":null,
+            "group_id":"7fefd81d-d1b9-46bb-9ef3-18a76fa3a395",
+            "first_published_at":"2020-08-03T15:17:06.774Z",
+            "release_id":null,
+            "lang":"default",
+            "path":null,
+            "translated_slugs":[]
+        }
+}
