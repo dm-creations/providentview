@@ -30,6 +30,11 @@ Vue.use(VueRouter)
     component: () => import('../views/Services.vue')
   },
   {
+    path: '/contact-us',
+    name: 'Contact Us',
+    component: () => import('../views/ContactUs.vue')
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => import('../views/Login.vue')

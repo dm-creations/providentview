@@ -54,12 +54,12 @@
                         <v-list-item-title>&rsaquo; WhatsApp</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-                <v-list-item>
+                <v-list-item href="m.me/110130504123888">
                     <v-list-item-content>
                         <v-list-item-title >&rsaquo; Facebook Messenger</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-                <v-list-item>
+                <v-list-item href="mailto:info@providentview.co.uk">
                     <v-list-item-content>
                         <v-list-item-title >&rsaquo; Email</v-list-item-title>
                     </v-list-item-content>
